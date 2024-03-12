@@ -262,7 +262,7 @@ async function init() {
 		type: 'blob',
 	});
 
-	await saveFile(zipBlob, `${user} ${repository} ${ref} ${dir}.zip`.replace(/\//, '-'));
+	await saveFile(zipBlob, `${dir}.zip`.replace(/\//, '-'));
 	updateStatus(`Downloaded ${downloaded} files! Done!`);
 }
 
